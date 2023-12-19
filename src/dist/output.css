@@ -2521,75 +2521,17 @@ video {
   text-align: center;
 }
 
-@media (max-width: 420px) {
-  .max-\[420px\]\:left-\[-2\%\] {
+@media (max-width: 350px) {
+  .max-\[350px\]\:left-\[-2\%\] {
     left: -2%;
   }
 
-  .max-\[420px\]\:w-\[105\%\] {
+  .max-\[350px\]\:w-\[105\%\] {
     width: 105%;
   }
 
-  .max-\[420px\]\:max-w-\[320px\] {
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 375px) {
-  .max-\[375px\]\:left-\[-2\%\] {
-    left: -2%;
-  }
-
-  .max-\[375px\]\:left-\[0\%\] {
-    left: 0%;
-  }
-
-  .max-\[375px\]\:left-\[10\%\] {
-    left: 10%;
-  }
-
-  .max-\[375px\]\:left-\[-20\%\] {
-    left: -20%;
-  }
-
-  .max-\[375px\]\:left-\[-10\%\] {
-    left: -10%;
-  }
-
-  .max-\[375px\]\:left-\[-5\%\] {
-    left: -5%;
-  }
-
-  .max-\[375px\]\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .max-\[375px\]\:w-\[120\%\] {
-    width: 120%;
-  }
-
-  .max-\[375px\]\:w-\[110\%\] {
-    width: 110%;
-  }
-
-  .max-\[375px\]\:w-\[105\%\] {
-    width: 105%;
-  }
-
-  .max-\[375px\]\:max-w-\[320px\] {
-    max-width: 320px;
-  }
-
-  .max-\[375px\]\:max-w-\[300px\] {
-    max-width: 300px;
-  }
-
-  .max-\[375px\]\:max-w-\[280px\] {
+  .max-\[350px\]\:max-w-\[280px\] {
     max-width: 280px;
-  }
-
-  .max-\[375px\]\:max-w-\[250px\] {
-    max-width: 250px;
   }
 }
 
@@ -2598,12 +2540,16 @@ video {
     left: -2%;
   }
 
-  .max-\[320px\]\:w-\[80\%\] {
-    width: 80%;
+  .max-\[320px\]\:left-\[-5\%\] {
+    left: -5%;
   }
 
-  .max-\[320px\]\:w-\[100\%\] {
-    width: 100%;
+  .max-\[320px\]\:left-\[0\%\] {
+    left: 0%;
+  }
+
+  .max-\[320px\]\:left-\[-1\%\] {
+    left: -1%;
   }
 
   .max-\[320px\]\:w-\[105\%\] {
@@ -2612,48 +2558,6 @@ video {
 
   .max-\[320px\]\:max-w-\[280px\] {
     max-width: 280px;
-  }
-
-  .max-\[320px\]\:max-w-\[290px\] {
-    max-width: 290px;
-  }
-
-  .max-\[320px\]\:max-w-\[300px\] {
-    max-width: 300px;
-  }
-
-  .max-\[320px\]\:max-w-\[310px\] {
-    max-width: 310px;
-  }
-}
-
-@media (max-width: 319px) {
-  .max-\[319px\]\:left-\[-2\%\] {
-    left: -2%;
-  }
-
-  .max-\[319px\]\:w-\[105\%\] {
-    width: 105%;
-  }
-
-  .max-\[319px\]\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .max-\[319px\]\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .max-\[319px\]\:max-w-\[280px\] {
-    max-width: 280px;
-  }
-
-  .max-\[319px\]\:max-w-\[320px\] {
-    max-width: 320px;
-  }
-
-  .max-\[319px\]\:max-w-\[200px\] {
-    max-width: 200px;
   }
 }
 
