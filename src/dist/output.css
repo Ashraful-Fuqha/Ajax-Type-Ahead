@@ -2521,92 +2521,70 @@ video {
   text-align: center;
 }
 
-@media (min-width: 375px) {
-  .x_sm\:left-\[-20\%\] {
-    left: -20%;
-  }
-
-  .x_sm\:left-\[0\] {
-    left: 0;
-  }
-
-  .x_sm\:left-\[10\%\] {
-    left: 10%;
-  }
-
-  .x_sm\:left-\[5\%\] {
-    left: 5%;
-  }
-
-  .x_sm\:left-\[0\%\] {
-    left: 0%;
-  }
-
-  .x_sm\:left-\[-5\%\] {
-    left: -5%;
-  }
-
-  .x_sm\:left-\[-3\%\] {
-    left: -3%;
-  }
-
-  .x_sm\:left-\[3\%\] {
-    left: 3%;
-  }
-
-  .x_sm\:left-\[-2\%\] {
+@media not all and (min-width: 375px) {
+  .max-x_sm\:left-\[-2\%\] {
     left: -2%;
   }
 
-  .x_sm\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .x_sm\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .x_sm\:w-\[120\%\] {
-    width: 120%;
-  }
-
-  .x_sm\:w-\[110\%\] {
-    width: 110%;
-  }
-
-  .x_sm\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .x_sm\:w-\[95\%\] {
-    width: 95%;
-  }
-
-  .x_sm\:w-\[98\%\] {
-    width: 98%;
-  }
-
-  .x_sm\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .x_sm\:w-\[105\%\] {
+  .max-x_sm\:w-\[105\%\] {
     width: 105%;
   }
 
-  .x_sm\:max-w-\[200px\] {
-    max-width: 200px;
+  .max-x_sm\:max-w-\[320px\] {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 375px) {
+  .max-\[375px\]\:left-\[-2\%\] {
+    left: -2%;
   }
 
-  .x_sm\:max-w-\[300px\] {
-    max-width: 300px;
+  .max-\[375px\]\:left-\[10\%\] {
+    left: 10%;
   }
 
-  .x_sm\:max-w-\[350px\] {
-    max-width: 350px;
+  .max-\[375px\]\:left-\[5\%\] {
+    left: 5%;
   }
 
-  .x_sm\:max-w-\[320px\] {
+  .max-\[375px\]\:w-\[105\%\] {
+    width: 105%;
+  }
+
+  .max-\[375px\]\:max-w-\[320px\] {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .max-\[320px\]\:left-\[-2\%\] {
+    left: -2%;
+  }
+
+  .max-\[320px\]\:w-\[105\%\] {
+    width: 105%;
+  }
+
+  .max-\[320px\]\:max-w-\[320px\] {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 375px) {
+  .min-\[375px\]\:left-\[10\%\] {
+    left: 10%;
+  }
+
+  .min-\[375px\]\:left-\[-2\%\] {
+    left: -2%;
+  }
+
+  .min-\[375px\]\:w-\[105\%\] {
+    width: 105%;
+  }
+
+  .min-\[375px\]\:max-w-\[320px\] {
     max-width: 320px;
   }
 }
