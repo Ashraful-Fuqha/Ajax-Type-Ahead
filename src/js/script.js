@@ -8,6 +8,13 @@ window.addEventListener('load', e => {
   searchInput.value = ''  
 })
 
+document.addEventListener('readystatechange', e => {
+    if (e.target.readyState === 'complete'){
+        console.log("ready state: complete")
+        fetch_data();
+    }
+})
+
 const cities = [];
 
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
@@ -38,19 +45,27 @@ function findCities(cityToMatch, cities){
 
 function displayCites(){
     const matchArray = findCities(this.value, cities)
-    const html = matchArray.map(place => {
-    const regex = new RegExp(this.value, 'gi');
+    let html;
 
-    const cityName = place.city.replace(regex, `<span class="hl text-yellow-300">${this.value}</span>`);
-    const stateName = place.state.replace(regex, `<span class="hl text-yellow-300">${this.value}</span>`);
-    return `
-      <li class="searchedCiteis flex justify-between capitalize p-5">
-        <span class="name">${cityName}, ${stateName}</span> 
-        <span class="population">${numberWithCommas(place.population)}</span>
-      </li>
-    `;
-  }).join('');
-  suggestions.innerHTML = html;
+    if(this.value.trim() === ''){
+      html = `<li class="flex justify-between capitalize p-5">Filter for a city</li>
+              <li class="flex justify-between capitalize p-5">or a state</li>
+              `
+    } else {
+      html = matchArray.map(place => {
+      const regex = new RegExp(this.value, 'gi');
+
+      const cityName = place.city.replace(regex, `<span class="hl text-yellow-300">${this.value}</span>`);
+      const stateName = place.state.replace(regex, `<span class="hl text-yellow-300">${this.value}</span>`);
+      return `
+        <li class="searchedCiteis flex justify-between capitalize p-5">
+          <span class="name">${cityName}, ${stateName}</span> 
+          <span class="population">${numberWithCommas(place.population)}</span>
+        </li>
+      `;
+      }).join('');
+    }
+    suggestions.innerHTML = html;
 }
 
 function numberWithCommas(x) {
